@@ -1,0 +1,131 @@
+.anggota-section {
+    padding: 60px 0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.anggota-section .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #003366; /* Biru Navy */
+    margin-bottom: 40px;
+}
+
+/* --- Search Bar Styling --- */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.search-label {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 600px; /* Panjang kotak input */
+    height: 50px;
+    background-color: #dcdcdc; /* Warna Abu-abu sesuai gambar */
+    border: none;
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+}
+
+.search-input:focus {
+    background-color: #d0d0d0; /* Sedikit lebih gelap saat diklik */
+}
+
+/* --- Table Styling (Kotak Terpisah) --- */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Agar bisa digeser di HP */
+    padding-bottom: 20px;
+}
+
+.custom-table {
+    width: 100%;
+    min-width: 800px; /* Lebar minimal agar tidak gepeng */
+    border-collapse: separate; /* PENTING: Agar sel bisa dipisah */
+    border-spacing: 15px 0; /* Jarak antar kolom header (Horizontal Gap) */
+}
+
+/* Header (NIM, JABATAN, dll) */
+.custom-table thead th {
+    background-color: #dcdcdc; /* Background Abu-abu */
+    color: #003366; /* Teks Biru Navy */
+    padding: 15px;
+    text-align: center;
+    font-weight: 800; /* Font Tebal */
+    font-size: 1.1rem;
+    border-radius: 8px; /* Sudut melengkung seperti tombol */
+    text-transform: uppercase;
+}
+
+/* Isi Tabel */
+.custom-table tbody td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Responsive di HP */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+        padding: 0 20px;
+    }
+}
+/* --- Styling Tombol Cari --- */
+.btn-cari {
+    height: 50px;
+    padding: 0 30px;
+    background-color: #003366; /* Warna Biru Navy HIMA */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px; /* Sudut melengkung sama dengan input */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.btn-cari:hover {
+    background-color: #002244; /* Warna lebih gelap saat disentuh */
+    transform: scale(1.05); /* Efek membesar sedikit */
+}
+
+.btn-cari:active {
+    transform: scale(0.95); /* Efek mengecil saat diklik */
+}
+
+/* Responsive: Agar tombol tidak berantakan di HP */
+@media (max-width: 768px) {
+    .btn-cari {
+        width: 100%; /* Tombol jadi lebar penuh di HP */
+        margin-top: 10px;
+    }
+}
