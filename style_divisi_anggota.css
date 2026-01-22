@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #003366; /* Biru Navy */
+    color: #003366; 
     margin-bottom: 40px;
 }
 
@@ -30,11 +30,11 @@
 
 .search-input {
     width: 100%;
-    max-width: 600px; /* Panjang kotak input */
+    max-width: 600px; 
     height: 50px;
-    background-color: #dcdcdc; /* Warna Abu-abu sesuai gambar */
+    background-color: #dcdcdc; 
     border: none;
-    border-radius: 8px; /* Sudut melengkung */
+    border-radius: 8px; 
     padding: 0 20px;
     font-size: 1rem;
     outline: none;
@@ -42,32 +42,32 @@
 }
 
 .search-input:focus {
-    background-color: #d0d0d0; /* Sedikit lebih gelap saat diklik */
+    background-color: #d0d0d0; 
 }
 
 /* --- Table Styling (Kotak Terpisah) --- */
 .table-wrapper {
     width: 100%;
-    overflow-x: auto; /* Agar bisa digeser di HP */
+    overflow-x: auto; 
     padding-bottom: 20px;
 }
 
 .custom-table {
     width: 100%;
-    min-width: 800px; /* Lebar minimal agar tidak gepeng */
-    border-collapse: separate; /* PENTING: Agar sel bisa dipisah */
-    border-spacing: 15px 0; /* Jarak antar kolom header (Horizontal Gap) */
+    min-width: 800px; 
+    border-collapse: separate; 
+    border-spacing: 15px 0; 
 }
 
 /* Header (NIM, JABATAN, dll) */
 .custom-table thead th {
-    background-color: #dcdcdc; /* Background Abu-abu */
-    color: #003366; /* Teks Biru Navy */
+    background-color: #dcdcdc; 
+    color: #003366; 
     padding: 15px;
     text-align: center;
-    font-weight: 800; /* Font Tebal */
+    font-weight: 800; 
     font-size: 1.1rem;
-    border-radius: 8px; /* Sudut melengkung seperti tombol */
+    border-radius: 8px; 
     text-transform: uppercase;
 }
 
@@ -101,31 +101,31 @@
 .btn-cari {
     height: 50px;
     padding: 0 30px;
-    background-color: #003366; /* Warna Biru Navy HIMA */
+    background-color: #003366; 
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1rem;
     border: none;
-    border-radius: 8px; /* Sudut melengkung sama dengan input */
+    border-radius: 8px; 
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-transform: uppercase;
 }
 
 .btn-cari:hover {
-    background-color: #002244; /* Warna lebih gelap saat disentuh */
-    transform: scale(1.05); /* Efek membesar sedikit */
+    background-color: #002244; 
+    transform: scale(1.05); 
 }
 
 .btn-cari:active {
-    transform: scale(0.95); /* Efek mengecil saat diklik */
+    transform: scale(0.95); 
 }
 
 /* Responsive: Agar tombol tidak berantakan di HP */
 @media (max-width: 768px) {
     .btn-cari {
-        width: 100%; /* Tombol jadi lebar penuh di HP */
+        width: 100%; 
         margin-top: 10px;
     }
 }
