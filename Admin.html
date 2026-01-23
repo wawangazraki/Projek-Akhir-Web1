@@ -15,9 +15,9 @@
             --secondary-color: #1b263b;
             --accent-color: #415a77;
             --text-light: #e0e1dd;
-            --danger: #e63946;   /* Warna Merah */
-            --success: #2a9d8f;  /* Warna Hijau */
-            --warning: #e9c46a;  /* Warna Kuning */
+            --danger: #e63946;   
+            --success: #2a9d8f;  
+            --warning: #e9c46a;  
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
@@ -404,7 +404,7 @@
             .catch(err => tbody.innerHTML = '<tr><td colspan="4">Gagal memuat proker.</td></tr>');
         }
 
-        // Load Divisi (UPDATE: DENGAN TOMBOL AKSI)
+        // Load Divisi 
         function loadDivisi() {
             const tbody = document.querySelector('#divisi-table tbody');
             tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;">Sedang mengambil data...</td></tr>';
